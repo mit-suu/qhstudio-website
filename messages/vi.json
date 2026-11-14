@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "qh.studio — Studio dựng video & hậu kỳ",
+    "description": "Dựng video ngắn, video dài, video quảng cáo và motion graphics cho creator, doanh nghiệp và agency. Nhanh, hợp lý, chất lượng.",
+    "work": "Dự án",
+    "services": "Dịch vụ",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "tagline": "Quick · Affordable · Good",
+  "nav": {
+    "home": "Trang chủ",
+    "work": "Dự án",
+    "services": "Dịch vụ",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "quote": "Nhận báo giá",
+    "menu": "Menu",
+    "close": "Đóng",
+    "language": "Ngôn ngữ"
+  },
+  "home": {
+    "eyebrow": "Studio dựng video & hậu kỳ",
+    "title": "Dựng video chất lượng không cần phải đắt.",
+    "subtitle": "Chúng tôi dựng video ngắn, video dài, video quảng cáo và motion graphics cho creator, doanh nghiệp và agency tại Việt Nam và quốc tế.",
+    "primary": "Nhận báo giá",
+    "secondary": "Xem dự án",
+    "clientsTitle": "Creator và thương hiệu đã đồng hành",
+    "stats": [
+      { "value": "29.2M", "label": "lượt xem trên kênh nội bộ" },
+      { "value": "180+", "label": "video đã sản xuất" },
+      { "value": "9.9M", "label": "lượt xem cho một video" },
+      { "value": "3", "label": "thị trường: Mỹ, Anh, Việt Nam" }
+    ],
+    "featuredTitle": "Dự án tiêu biểu",
+    "featuredCta": "Xem tất cả dự án",
+    "servicesTitle": "Chúng tôi làm gì",
+    "servicesCta": "Xem dịch vụ",
+    "valuesTitle": "Vì sao chọn qh.studio",
+    "processTitle": "Quy trình làm việc"
+  },
+  "values": [
+    { "title": "Quick", "text": "Dựng nhanh, đảm bảo deadline." },
+    { "title": "Affordable", "text": "Chi phí hợp lý, phù hợp nhiều mức ngân sách." },
+    { "title": "Good", "text": "Chỉn chu từng chi tiết, đúng yêu cầu của bạn." }
+  ],
+  "process": [
+    { "title": "Gửi brief", "text": "Gửi footage, video tham khảo và deadline." },
+    { "title": "Dựng video", "text": "Nhịp dựng, phụ đề, âm thanh và đồ họa, tối ưu cho từng nền tảng." },
+    { "title": "Duyệt & chỉnh sửa", "text": "Bạn góp ý, chúng tôi chỉnh đến khi ưng ý." },
+    { "title": "Bàn giao", "text": "File hoàn chỉnh, sẵn sàng đăng trên mọi nền tảng, đúng hạn." }
+  ],
+  "services": {
+    "title": "Dịch vụ",
+    "intro": "Bốn dịch vụ giúp video của bạn hiệu quả hơn, từ một video lẻ đến sản xuất số lượng lớn hằng tháng.",
+    "includes": "Bao gồm",
+    "items": [
+      {
+        "id": "short-form",
+        "title": "Dựng video ngắn",
+        "platforms": "TikTok · Reels · YouTube Shorts",
+        "text": "Hook giữ chân người xem, nhịp dựng gọn và phụ đề tối ưu tỉ lệ xem hết.",
+        "includes": ["Hook & nhịp dựng giữ chân", "Phụ đề động", "Âm thanh & nhạc nền", "B-roll và đồ họa"]
+      },
+      {
+        "id": "long-form",
+        "title": "Dựng video dài",
+        "platforms": "YouTube · Podcast · Phim tài liệu",
+        "text": "Dựng theo mạch câu chuyện, giúp video dài vẫn dễ xem đến cuối.",
+        "includes": ["Cấu trúc câu chuyện & nhịp dựng", "Dựng multicam & podcast", "Chỉnh màu & xử lý âm thanh", "Tiêu đề, lower third, chapter"]
+      },
+      {
+        "id": "ads",
+        "title": "Video quảng cáo",
+        "platforms": "Sản phẩm · Thương hiệu · UGC",
+        "text": "Video quảng cáo chuyển đổi, biến sự chú ý thành hành động.",
+        "includes": ["Nhiều phiên bản hook để test", "Dựng UGC & video sản phẩm", "Đủ tỉ lệ khung hình cho từng nền tảng", "Kêu gọi hành động rõ ràng"]
+      },
+      {
+        "id": "motion",
+        "title": "Motion graphics",
+        "platforms": "Animation · VFX · Infographic",
+        "text": "Chuyển động giúp giải thích, nhấn mạnh và làm thương hiệu sống động hơn.",
+        "includes": ["Kinetic typography", "Infographic & chú thích", "Animation logo & tiêu đề", "Hiệu ứng hình ảnh"]
+      }
+    ],
+    "seeWork": "Xem ví dụ",
+    "faqTitle": "Câu hỏi thường gặp",
+    "faq": [
+      {
+        "q": "Tôi cần gửi những gì?",
+        "a": "Footage gốc (link Google Drive, Dropbox hay bất kỳ link tải nào đều được), video tham khảo bạn thích và deadline. Chưa rõ cần gì? Cứ gửi những gì bạn có, chúng tôi sẽ hướng dẫn."
+      },
+      {
+        "q": "Dựng một video mất bao lâu?",
+        "a": "Tùy độ dài và độ phức tạp. Mỗi báo giá đều kèm ngày bàn giao cụ thể và chúng tôi giữ đúng cam kết đó."
+      },
+      {
+        "q": "Có được chỉnh sửa không?",
+        "a": "Có. Số vòng chỉnh sửa được thống nhất ngay trong báo giá."
+      },
+      {
+        "q": "Studio có nhận khách nước ngoài không?",
+        "a": "Có. Chúng tôi làm việc từ xa với creator, thương hiệu và agency tại Việt Nam, Mỹ, Anh và nhiều nơi khác."
+      },
+      {
+        "q": "Chi phí bao nhiêu?",
+        "a": "Chi phí phụ thuộc vào độ dài, phong cách và số lượng video. Gửi brief để nhận báo giá miễn phí."
+      }
+    ]
+  },
+  "work": {
+    "title": "Dự án",
+    "intro": "Tuyển chọn các dự án video ngắn, video dài, quảng cáo và motion graphics.",
+    "all": "Tất cả",
+    "filter": "Lọc theo dịch vụ",
+    "hint": "Di chuột để xem trước. Nhấn để bật tiếng.",
+    "empty": "Chưa có dự án trong mục này."
+  },
+  "categories": {
+    "short-form": "Video ngắn",
+    "long-form": "Video dài",
+    "ads": "Quảng cáo",
+    "motion": "Motion"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "lead": "qh.studio là team dựng video và hậu kỳ tinh gọn tại Việt Nam, làm việc với khách hàng khắp thế giới.",
+    "story": [
+      "qh.studio bắt đầu từ một editor freelance đã xây dựng kênh YouTube từ con số 0 lên 29,2 triệu lượt xem, rồi dựng Reels cho các thương hiệu creator tại Mỹ.",
+      "Giờ đây chúng tôi là một studio: team nhỏ với quy trình chung, để khách hàng có được sự nhanh nhạy, linh hoạt của freelancer cùng sự ổn định của một team."
+    ],
+    "whoTitle": "Khách hàng của chúng tôi",
+    "who": ["Content creator & YouTuber", "Doanh nghiệp & thương hiệu", "Marketing agency"],
+    "howTitle": "Cách chúng tôi làm việc",
+    "how": [
+      { "title": "Team tinh gọn", "text": "Bạn trao đổi trực tiếp với editor phụ trách dự án. Không qua trung gian." },
+      { "title": "Làm việc từ xa", "text": "Linh hoạt múi giờ với khách hàng trong nước và quốc tế." },
+      { "title": "Linh hoạt", "text": "Nhận dự án lẻ hoặc sản xuất định kỳ hằng tháng." }
+    ]
+  },
+  "contact": {
+    "title": "Cùng bàn về video của bạn",
+    "intro": "Chia sẻ về dự án, chúng tôi sẽ phản hồi kèm báo giá.",
+    "channelsTitle": "Liên hệ trực tiếp",
+    "channels": {
+      "email": "Email",
+      "phone": "Điện thoại",
+      "zalo": "Zalo",
+      "messenger": "Messenger",
+      "whatsapp": "WhatsApp"
+    },
+    "formTitle": "Gửi brief",
+    "form": {
+      "name": "Tên của bạn",
+      "contact": "Email hoặc số điện thoại",
+      "service": "Dịch vụ",
+      "servicePlaceholder": "Chọn dịch vụ",
+      "other": "Khác",
+      "link": "Link footage hoặc video tham khảo",
+      "message": "Về dự án của bạn",
+      "messagePlaceholder": "Độ dài, phong cách, deadline, ngân sách…",
+      "submit": "Gửi brief",
+      "note": "Ứng dụng email của bạn sẽ mở với nội dung brief đã điền sẵn.",
+      "subject": "Brief dự án mới"
+    }
+  },
+  "cta": {
+    "title": "Có footage đang chờ dựng?",
+    "text": "Cho chúng tôi biết bạn cần gì và nhận báo giá.",
+    "button": "Nhận báo giá"
+  },
+  "footer": {
+    "basedIn": "Tại Việt Nam, phục vụ toàn cầu.",
+    "rights": "Bảo lưu mọi quyền."
+  },
+  "video": {
+    "soundOn": "Bật tiếng",
+    "soundOff": "Tắt tiếng",
+    "seek": "Tua video"
+  },
+  "chat": "Nhắn tin cho chúng tôi"
+}

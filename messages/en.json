@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "qh.studio — Video editing & post-production studio",
+    "description": "Short-form, long-form, video ads and motion graphics for creators, brands and agencies. Quick, affordable, good.",
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "tagline": "Quick · Affordable · Good",
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Get a quote",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language"
+  },
+  "home": {
+    "eyebrow": "Video editing & post-production studio",
+    "title": "Great video editing doesn't have to be expensive.",
+    "subtitle": "We edit short-form, long-form, video ads and motion graphics for creators, brands and agencies in Vietnam and worldwide.",
+    "primary": "Get a quote",
+    "secondary": "See our work",
+    "clientsTitle": "Creators and brands we've edited for",
+    "stats": [
+      { "value": "29.2M", "label": "views on our in-house channel" },
+      { "value": "180+", "label": "videos produced" },
+      { "value": "9.9M", "label": "views on a single video" },
+      { "value": "3", "label": "markets: US, UK, Vietnam" }
+    ],
+    "featuredTitle": "Selected work",
+    "featuredCta": "View all work",
+    "servicesTitle": "What we do",
+    "servicesCta": "Explore services",
+    "valuesTitle": "Why qh.studio",
+    "processTitle": "How it works"
+  },
+  "values": [
+    { "title": "Quick", "text": "Fast turnaround. Deadlines kept." },
+    { "title": "Affordable", "text": "Fair pricing that fits a range of budgets." },
+    { "title": "Good", "text": "Polished, detail-driven edits that match your brief." }
+  ],
+  "process": [
+    { "title": "Send your brief", "text": "Share your footage, references and deadline." },
+    { "title": "We edit", "text": "Pacing, captions, sound and graphics, tailored to your platform." },
+    { "title": "Review & revise", "text": "Leave feedback and we refine until it's right." },
+    { "title": "Deliver", "text": "Final files, export-ready for every platform, on time." }
+  ],
+  "services": {
+    "title": "Services",
+    "intro": "Four ways we help your videos perform, from a single edit to ongoing monthly volume.",
+    "includes": "What's included",
+    "items": [
+      {
+        "id": "short-form",
+        "title": "Short-form editing",
+        "platforms": "TikTok · Reels · YouTube Shorts",
+        "text": "Scroll-stopping hooks, tight pacing and captions built for retention.",
+        "includes": ["Hook & pacing for retention", "Animated captions", "Sound design & music", "B-roll and graphics"]
+      },
+      {
+        "id": "long-form",
+        "title": "Long-form editing",
+        "platforms": "YouTube · Podcast · Documentary",
+        "text": "Story-first edits that keep long videos easy to watch.",
+        "includes": ["Story structure & pacing", "Multicam & podcast edits", "Color & audio clean-up", "Titles, lower thirds, chapters"]
+      },
+      {
+        "id": "ads",
+        "title": "Video ads",
+        "platforms": "Product · Brand · UGC",
+        "text": "Direct-response edits that turn attention into action.",
+        "includes": ["Hook variations for testing", "UGC & product edits", "Platform-ready aspect ratios", "Clear call to action"]
+      },
+      {
+        "id": "motion",
+        "title": "Motion graphics",
+        "platforms": "Animation · VFX · Infographics",
+        "text": "Motion that explains, highlights and makes a brand feel alive.",
+        "includes": ["Kinetic typography", "Infographics & callouts", "Logo & title animation", "Visual effects"]
+      }
+    ],
+    "seeWork": "See examples",
+    "faqTitle": "FAQ",
+    "faq": [
+      {
+        "q": "What do I need to send?",
+        "a": "Your raw footage (a Google Drive, Dropbox or any download link works), references you like and your deadline. Not sure yet? Send what you have and we'll guide you."
+      },
+      {
+        "q": "How long does an edit take?",
+        "a": "It depends on length and complexity. We confirm a delivery date with every quote and stick to it."
+      },
+      {
+        "q": "Are revisions included?",
+        "a": "Yes. Revision rounds are included and agreed in your quote."
+      },
+      {
+        "q": "Do you work with international clients?",
+        "a": "Yes. We work remotely with creators, brands and agencies in Vietnam, the US, the UK and beyond."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Pricing depends on length, style and volume. Send your brief and we'll reply with a free quote."
+      }
+    ]
+  },
+  "work": {
+    "title": "Work",
+    "intro": "A selection of edits across short-form, long-form, ads and motion graphics.",
+    "all": "All",
+    "filter": "Filter by service",
+    "hint": "Hover to preview. Click for sound.",
+    "empty": "No projects in this category yet."
+  },
+  "categories": {
+    "short-form": "Short-form",
+    "long-form": "Long-form",
+    "ads": "Ads",
+    "motion": "Motion"
+  },
+  "about": {
+    "title": "About",
+    "lead": "qh.studio is a lean video editing and post-production team based in Vietnam, working with clients worldwide.",
+    "story": [
+      "qh.studio started with one freelance editor who built a YouTube channel from zero to 29.2M views, then edited Reels for creator brands in the US.",
+      "Today we're a studio: a small team with a shared workflow, so clients get the speed and flexibility of a freelancer with the reliability of a team."
+    ],
+    "whoTitle": "Who we work with",
+    "who": ["Content creators & YouTubers", "Businesses & brands", "Marketing agencies"],
+    "howTitle": "How we work",
+    "how": [
+      { "title": "Lean team", "text": "You talk directly to the editors on your project. No layers." },
+      { "title": "Remote-first", "text": "We work across time zones with clients in Vietnam and abroad." },
+      { "title": "Flexible", "text": "One-off projects or ongoing monthly volume." }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk about your video",
+    "intro": "Tell us about your project and we'll get back to you with a quote.",
+    "channelsTitle": "Reach us directly",
+    "channels": {
+      "email": "Email",
+      "phone": "Phone",
+      "zalo": "Zalo",
+      "messenger": "Messenger",
+      "whatsapp": "WhatsApp"
+    },
+    "formTitle": "Send a brief",
+    "form": {
+      "name": "Your name",
+      "contact": "Email or phone",
+      "service": "Service",
+      "servicePlaceholder": "Choose a service",
+      "other": "Other",
+      "link": "Footage or reference link",
+      "message": "About your project",
+      "messagePlaceholder": "Length, style, deadline, budget…",
+      "submit": "Send brief",
+      "note": "This opens your email app with your brief filled in.",
+      "subject": "New project brief"
+    }
+  },
+  "cta": {
+    "title": "Have footage waiting?",
+    "text": "Tell us what you need and get a quote.",
+    "button": "Get a quote"
+  },
+  "footer": {
+    "basedIn": "Based in Vietnam, working worldwide.",
+    "rights": "All rights reserved."
+  },
+  "video": {
+    "soundOn": "Turn sound on",
+    "soundOff": "Turn sound off",
+    "seek": "Seek video"
+  },
+  "chat": "Chat with us"
+}
