@@ -18,7 +18,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
   const channels = getChannels(locale);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-24 sm:px-8">
+    <div className="mx-auto max-w-7xl px-4 pb-24 sm:px-8">
       <PageIntro title={t("contact.title")} intro={t("contact.intro")} />
 
       <div className="grid gap-14 border-t border-line pt-12 md:grid-cols-[1fr_1.6fr]">

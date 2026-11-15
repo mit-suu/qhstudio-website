@@ -79,7 +79,7 @@ export function VideoCard({ video }: { video: Video }) {
       <div
         onPointerEnter={(event) => event.pointerType === "mouse" && playMuted()}
         onPointerLeave={(event) => event.pointerType === "mouse" && stop()}
-        className={`group relative w-full overflow-hidden rounded-lg bg-ink ${horizontal ? "aspect-video" : "aspect-[9/16]"}`}
+        className={`group relative w-full overflow-hidden rounded-xl bg-ink ${horizontal ? "aspect-video" : "aspect-[9/16]"}`}
       >
         <button type="button" onClick={toggleSound} aria-label={soundLabel} className="block h-full w-full">
           <video
@@ -119,7 +119,7 @@ export function VideoCard({ video }: { video: Video }) {
           </output>
         </div>
       </div>
-      <figcaption className="mt-2 text-xs">
+      <figcaption className="mt-3 text-sm">
         <span className="block truncate font-semibold">{video.title}</span>
         <span className="text-muted">{video.tag}</span>
       </figcaption>

@@ -20,6 +20,7 @@ Video `.mp4` không được commit vào git. Khi chạy local, chép file vào 
 | Dự án, video, dự án tiêu biểu, tên khách hàng | [src/content/work.ts](src/content/work.ts) |
 | Email, điện thoại, Zalo, Messenger, WhatsApp | [src/content/site.ts](src/content/site.ts) |
 | Showreel trang chủ (`public/work/showreel.mp4` + `.jpg`, 16:9) | `showreel` trong [src/content/work.ts](src/content/work.ts) |
+| Reel thứ hai ở trang Giới thiệu (`public/work/reel-fable.mp4` + `.jpg`) | `loudReel` trong [src/content/work.ts](src/content/work.ts) |
 
 Kênh liên hệ nào để trống thì sẽ tự ẩn khỏi trang Liên hệ, footer và nút chat nổi. Bản VI ưu tiên Zalo/Messenger, bản EN ưu tiên Email/WhatsApp.
 

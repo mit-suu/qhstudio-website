@@ -23,21 +23,20 @@ export default async function ServicesPage({ params }: PageProps<"/[locale]/serv
 
   return (
     <>
-      <div className="mx-auto max-w-6xl px-4 sm:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <PageIntro title={t("services.title")} intro={t("services.intro")} />
 
         <div className="divide-y divide-line border-y border-line">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <Reveal key={service.id}>
               <article id={service.id} className="grid scroll-mt-24 gap-6 py-12 md:grid-cols-[1fr_1fr]">
                 <div>
-                  <span className="text-xs text-muted">0{index + 1}</span>
-                  <h2 className="mt-2 text-3xl font-black tracking-[-0.03em] sm:text-4xl">{service.title}</h2>
+                                    <h2 className="text-3xl font-black tracking-[-0.03em] sm:text-4xl">{service.title}</h2>
                   <p className="mt-2 text-sm text-muted">{service.platforms}</p>
                   <p className="mt-5 max-w-md text-lg">{service.text}</p>
                   <Link
                     href={{ pathname: "/work", query: { category: service.id } }}
-                    className="mt-6 inline-block text-sm font-semibold underline underline-offset-4"
+                    className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold underline underline-offset-4"
                   >
                     {t("services.seeWork")} →
                   </Link>
@@ -47,7 +46,7 @@ export default async function ServicesPage({ params }: PageProps<"/[locale]/serv
                   <ul className="mt-4 space-y-3">
                     {service.includes.map((item) => (
                       <li key={item} className="flex gap-3 border-b border-line pb-3">
-                        <span aria-hidden="true">—</span>
+                        <span aria-hidden="true" className="mt-2.5 size-1.5 shrink-0 bg-ink" />
                         {item}
                       </li>
                     ))}
@@ -64,14 +63,14 @@ export default async function ServicesPage({ params }: PageProps<"/[locale]/serv
           <SectionHeading>{t("services.faqTitle")}</SectionHeading>
           <div className="divide-y divide-line">
             {faq.map((item) => (
-              <details key={item.q} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-bold">
+              <details key={item.q} className="group">
+                <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-bold">
                   {item.q}
                   <span className="text-2xl font-light transition-transform group-open:rotate-45" aria-hidden="true">
                     +
                   </span>
                 </summary>
-                <p className="mt-3 max-w-3xl text-muted">{item.a}</p>
+                <p className="-mt-1 max-w-3xl pb-6 text-muted">{item.a}</p>
               </details>
             ))}
           </div>

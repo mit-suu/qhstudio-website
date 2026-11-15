@@ -23,8 +23,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-4 sm:px-8">
-        <Link href="/" aria-label="qh.studio" onClick={() => setOpen(false)} className="text-2xl">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 sm:px-8">
+        <Link href="/" aria-label="qh.studio" onClick={() => setOpen(false)} className="py-2 text-2xl">
           <Logo />
         </Link>
 
@@ -34,7 +34,7 @@ export function SiteHeader() {
               key={item.href}
               href={item.href}
               aria-current={isActive(item.href) ? "page" : undefined}
-              className={isActive(item.href) ? "text-ink" : "text-muted transition-colors hover:text-ink"}
+              className={`py-2 ${isActive(item.href) ? "text-ink" : "text-muted transition-colors hover:text-ink"}`}
             >
               {t(item.key)}
             </Link>
@@ -53,7 +53,7 @@ export function SiteHeader() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="text-sm font-semibold md:hidden"
+          className="-mr-2 px-2 py-3 text-sm font-semibold md:hidden"
         >
           {open ? t("close") : t("menu")}
         </button>

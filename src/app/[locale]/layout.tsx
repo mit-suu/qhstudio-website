@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
 
   return {
     metadataBase: new URL(site.url),
-    title: { default: t("title"), template: "%s — qh.studio" },
+    title: { default: t("title"), template: "%s · qh.studio" },
     description: t("description"),
     openGraph: {
       type: "website",

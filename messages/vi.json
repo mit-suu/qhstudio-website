@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "qh.studio — Studio dựng video & hậu kỳ",
+    "title": "qh.studio · Studio dựng video & hậu kỳ",
     "description": "Dựng video ngắn, video dài, video quảng cáo và motion graphics cho creator, doanh nghiệp và agency. Nhanh, hợp lý, chất lượng.",
     "work": "Dự án",
     "services": "Dịch vụ",
@@ -27,10 +27,22 @@
     "secondary": "Xem dự án",
     "clientsTitle": "Creator và thương hiệu đã đồng hành",
     "stats": [
-      { "value": "29.2M", "label": "lượt xem trên kênh nội bộ" },
-      { "value": "180+", "label": "video đã sản xuất" },
-      { "value": "9.9M", "label": "lượt xem cho một video" },
-      { "value": "3", "label": "thị trường: Mỹ, Anh, Việt Nam" }
+      {
+        "value": "29.2M",
+        "label": "lượt xem trên kênh nội bộ"
+      },
+      {
+        "value": "180+",
+        "label": "video đã sản xuất"
+      },
+      {
+        "value": "9.9M",
+        "label": "lượt xem cho một video"
+      },
+      {
+        "value": "3",
+        "label": "thị trường: Mỹ, Anh, Việt Nam"
+      }
     ],
     "featuredTitle": "Dự án tiêu biểu",
     "featuredCta": "Xem tất cả dự án",
@@ -40,15 +52,36 @@
     "processTitle": "Quy trình làm việc"
   },
   "values": [
-    { "title": "Quick", "text": "Dựng nhanh, đảm bảo deadline." },
-    { "title": "Affordable", "text": "Chi phí hợp lý, phù hợp nhiều mức ngân sách." },
-    { "title": "Good", "text": "Chỉn chu từng chi tiết, đúng yêu cầu của bạn." }
+    {
+      "title": "Quick",
+      "text": "Dựng nhanh, đảm bảo deadline."
+    },
+    {
+      "title": "Affordable",
+      "text": "Chi phí hợp lý, phù hợp nhiều mức ngân sách."
+    },
+    {
+      "title": "Good",
+      "text": "Chỉn chu từng chi tiết, đúng yêu cầu của bạn."
+    }
   ],
   "process": [
-    { "title": "Gửi brief", "text": "Gửi footage, video tham khảo và deadline." },
-    { "title": "Dựng video", "text": "Nhịp dựng, phụ đề, âm thanh và đồ họa, tối ưu cho từng nền tảng." },
-    { "title": "Duyệt & chỉnh sửa", "text": "Bạn góp ý, chúng tôi chỉnh đến khi ưng ý." },
-    { "title": "Bàn giao", "text": "File hoàn chỉnh, sẵn sàng đăng trên mọi nền tảng, đúng hạn." }
+    {
+      "title": "Gửi brief",
+      "text": "Gửi footage, video tham khảo và deadline."
+    },
+    {
+      "title": "Dựng video",
+      "text": "Nhịp dựng, phụ đề, âm thanh và đồ họa, tối ưu cho từng nền tảng."
+    },
+    {
+      "title": "Duyệt & chỉnh sửa",
+      "text": "Bạn góp ý, chúng tôi chỉnh đến khi ưng ý."
+    },
+    {
+      "title": "Bàn giao",
+      "text": "File hoàn chỉnh, sẵn sàng đăng trên mọi nền tảng, đúng hạn."
+    }
   ],
   "services": {
     "title": "Dịch vụ",
@@ -60,28 +93,48 @@
         "title": "Dựng video ngắn",
         "platforms": "TikTok · Reels · YouTube Shorts",
         "text": "Hook giữ chân người xem, nhịp dựng gọn và phụ đề tối ưu tỉ lệ xem hết.",
-        "includes": ["Hook & nhịp dựng giữ chân", "Phụ đề động", "Âm thanh & nhạc nền", "B-roll và đồ họa"]
+        "includes": [
+          "Hook & nhịp dựng giữ chân",
+          "Phụ đề động",
+          "Âm thanh & nhạc nền",
+          "B-roll và đồ họa"
+        ]
       },
       {
         "id": "long-form",
         "title": "Dựng video dài",
         "platforms": "YouTube · Podcast · Phim tài liệu",
         "text": "Dựng theo mạch câu chuyện, giúp video dài vẫn dễ xem đến cuối.",
-        "includes": ["Cấu trúc câu chuyện & nhịp dựng", "Dựng multicam & podcast", "Chỉnh màu & xử lý âm thanh", "Tiêu đề, lower third, chapter"]
+        "includes": [
+          "Cấu trúc câu chuyện & nhịp dựng",
+          "Dựng multicam & podcast",
+          "Chỉnh màu & xử lý âm thanh",
+          "Tiêu đề, lower third, chapter"
+        ]
       },
       {
         "id": "ads",
         "title": "Video quảng cáo",
         "platforms": "Sản phẩm · Thương hiệu · UGC",
         "text": "Video quảng cáo chuyển đổi, biến sự chú ý thành hành động.",
-        "includes": ["Nhiều phiên bản hook để test", "Dựng UGC & video sản phẩm", "Đủ tỉ lệ khung hình cho từng nền tảng", "Kêu gọi hành động rõ ràng"]
+        "includes": [
+          "Nhiều phiên bản hook để test",
+          "Dựng UGC & video sản phẩm",
+          "Đủ tỉ lệ khung hình cho từng nền tảng",
+          "Kêu gọi hành động rõ ràng"
+        ]
       },
       {
         "id": "motion",
         "title": "Motion graphics",
         "platforms": "Animation · VFX · Infographic",
         "text": "Chuyển động giúp giải thích, nhấn mạnh và làm thương hiệu sống động hơn.",
-        "includes": ["Kinetic typography", "Infographic & chú thích", "Animation logo & tiêu đề", "Hiệu ứng hình ảnh"]
+        "includes": [
+          "Kinetic typography",
+          "Infographic & chú thích",
+          "Animation logo & tiêu đề",
+          "Hiệu ứng hình ảnh"
+        ]
       }
     ],
     "seeWork": "Xem ví dụ",
@@ -131,13 +184,29 @@
       "Giờ đây chúng tôi là một studio: team nhỏ với quy trình chung, để khách hàng có được sự nhanh nhạy, linh hoạt của freelancer cùng sự ổn định của một team."
     ],
     "whoTitle": "Khách hàng của chúng tôi",
-    "who": ["Content creator & YouTuber", "Doanh nghiệp & thương hiệu", "Marketing agency"],
+    "who": [
+      "Content creator & YouTuber",
+      "Doanh nghiệp & thương hiệu",
+      "Marketing agency"
+    ],
     "howTitle": "Cách chúng tôi làm việc",
     "how": [
-      { "title": "Team tinh gọn", "text": "Bạn trao đổi trực tiếp với editor phụ trách dự án. Không qua trung gian." },
-      { "title": "Làm việc từ xa", "text": "Linh hoạt múi giờ với khách hàng trong nước và quốc tế." },
-      { "title": "Linh hoạt", "text": "Nhận dự án lẻ hoặc sản xuất định kỳ hằng tháng." }
-    ]
+      {
+        "title": "Team tinh gọn",
+        "text": "Bạn trao đổi trực tiếp với editor phụ trách dự án. Không qua trung gian."
+      },
+      {
+        "title": "Làm việc từ xa",
+        "text": "Linh hoạt múi giờ với khách hàng trong nước và quốc tế."
+      },
+      {
+        "title": "Linh hoạt",
+        "text": "Nhận dự án lẻ hoặc sản xuất định kỳ hằng tháng."
+      }
+    ],
+    "reelTitle": "Bản cháy hơn",
+    "reelText": "Vẫn là chúng tôi, nhưng năng lượng khác. Reel này được dựng đúng cách chúng tôi làm cho TikTok và Reels: nhanh, mạnh và khớp từng nhịp.",
+    "reelLabel": "Reel ’26 · bản cháy hơn"
   },
   "contact": {
     "title": "Cùng bàn về video của bạn",
@@ -177,7 +246,8 @@
   "video": {
     "soundOn": "Bật tiếng",
     "soundOff": "Tắt tiếng",
-    "seek": "Tua video"
+    "seek": "Tua video",
+    "play": "Phát kèm tiếng"
   },
   "chat": "Nhắn tin cho chúng tôi"
 }

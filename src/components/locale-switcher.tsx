@@ -24,7 +24,7 @@ export function LocaleSwitcher({ className = "" }: { className?: string }) {
             locale={locale}
             onClick={() => remember(locale)}
             aria-current={locale === current ? "true" : undefined}
-            className={locale === current ? "text-ink" : "text-muted hover:text-ink"}
+            className={`px-1 py-2 ${locale === current ? "text-ink" : "text-muted hover:text-ink"}`}
           >
             {locale.toUpperCase()}
           </Link>

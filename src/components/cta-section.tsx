@@ -1,19 +1,26 @@
 import { getTranslations } from "next-intl/server";
+import { site } from "@/content/site";
 import { ButtonLink } from "./button-link";
 
+// Full-bleed closing band on every page; bookends the dark hero.
 export async function CtaSection() {
   const t = await getTranslations("cta");
 
   return (
-    <section className="mx-auto my-24 max-w-6xl px-4 sm:px-8">
-      <div className="flex flex-col items-start justify-between gap-8 rounded-2xl bg-ink px-8 py-14 text-paper sm:px-12 md:flex-row md:items-center">
+    <section className="mt-24 bg-ink text-paper sm:mt-32">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-8 sm:py-28 md:grid-cols-[1.4fr_1fr] md:items-end">
+        <h2 className="text-[clamp(2.5rem,4vw+1rem,4.5rem)] font-black leading-[0.95] tracking-[-0.04em]">{t("title")}</h2>
         <div>
-          <h2 className="text-3xl font-black tracking-[-0.03em] sm:text-5xl">{t("title")}</h2>
-          <p className="mt-3 text-paper/70">{t("text")}</p>
+          <p className="text-lg text-paper/70">{t("text")}</p>
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <ButtonLink href="/contact" variant="inverse">
+              {t("button")}
+            </ButtonLink>
+            <a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center text-sm font-medium text-paper/70 underline underline-offset-4 hover:text-paper">
+              {site.email}
+            </a>
+          </div>
         </div>
-        <ButtonLink href="/contact" variant="inverse" className="shrink-0">
-          {t("button")}
-        </ButtonLink>
       </div>
     </section>
   );

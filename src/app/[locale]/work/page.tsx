@@ -19,7 +19,7 @@ export default async function WorkPage({ params, searchParams }: PageProps<"/[lo
 
   return (
     <>
-      <div className="mx-auto max-w-6xl px-4 sm:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <PageIntro title={t("title")} intro={t("intro")} />
         <WorkGrid groups={getWork(locale)} initial={initial} />
       </div>

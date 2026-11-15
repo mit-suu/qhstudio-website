@@ -4,6 +4,8 @@ import { ValuesSection } from "@/components/brand-sections";
 import { CtaSection } from "@/components/cta-section";
 import { Logo, Tagline } from "@/components/logo";
 import { PageIntro, SectionHeading } from "@/components/section-heading";
+import { Showreel } from "@/components/showreel";
+import { loudReel } from "@/content/work";
 import { pageMetadata } from "@/lib/page-metadata";
 
 type TextItem = { title: string; text: string };
@@ -23,7 +25,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
 
   return (
     <>
-      <div className="mx-auto max-w-6xl px-4 sm:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <PageIntro title={t("about.title")} intro={t("about.lead")} />
 
         <section className="grid gap-12 border-t border-line py-14 md:grid-cols-[1fr_1.4fr]">
@@ -36,6 +38,12 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
+        </section>
+
+        <section className="py-14">
+          <SectionHeading>{t("about.reelTitle")}</SectionHeading>
+          <p className="-mt-4 mb-10 max-w-2xl text-lg text-muted">{t("about.reelText")}</p>
+          <Showreel slug={loudReel.slug} hasSound={loudReel.hasSound} autoPlay={false} label={t("about.reelLabel")} />
         </section>
 
         <ValuesSection className="py-14" />

@@ -173,10 +173,22 @@ const workData: WorkGroupData[] = [
 
 // Home hero video: <slug>.mp4 + <slug>.jpg, 16:9. Replace the files to update it;
 // set hasSound when the new cut has an audio track so the sound toggle appears.
-export const showreel = { slug: "showreel", hasSound: false };
+export const showreel = { slug: "showreel", hasSound: true };
+
+// Second, louder reel shown on the About page (click to play).
+export const loudReel = { slug: "reel-fable", hasSound: true };
 
 // Videos in "Selected work" on the home page.
-const featuredSlugs = ["carplanet-01", "argento-01", "natasha-zuvela-01", "ryse-gadget", "vietduc-hud", "beatframe-eminem"];
+const featuredSlugs = [
+  "carplanet-01",
+  "argento-01",
+  "natasha-zuvela-01",
+  "ryse-gadget",
+  "vietduc-hud",
+  "beatframe-eminem",
+  "carplanet-03",
+  "ryse-cost",
+];
 
 export const clientNames = [
   "Car Planet UK",

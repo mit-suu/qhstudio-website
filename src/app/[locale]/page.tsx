@@ -3,10 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProcessSection, ValuesSection } from "@/components/brand-sections";
 import { ButtonLink } from "@/components/button-link";
 import { CtaSection } from "@/components/cta-section";
-import { Reveal } from "@/components/reveal";
-import { Tagline } from "@/components/logo";
+import { SectionHeading, SectionLink } from "@/components/section-heading";
 import { Showreel } from "@/components/showreel";
-import { SectionHeading } from "@/components/section-heading";
 import { VideoCard } from "@/components/video-card";
 import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/lib/page-metadata";
@@ -28,92 +26,101 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 pb-20 pt-14 sm:px-8 lg:pt-20">
-        <p className="text-xs font-medium uppercase tracking-[0.3em] text-muted">{t("home.eyebrow")}</p>
-        <div className="mt-6 grid gap-8 lg:grid-cols-[1.6fr_1fr] lg:items-end">
-          <h1 className="text-5xl font-black leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-7xl">{t("home.title")}</h1>
-          <div>
-            <p className="text-lg text-muted">{t("home.subtitle")}</p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("home.primary")}</ButtonLink>
-              <ButtonLink href="/work" variant="secondary">
-                {t("home.secondary")}
-              </ButtonLink>
-            </div>
+      {/* Hero: copy and reel share one column so every edge lines up. */}
+      <section className="bg-ink text-paper">
+        <div className="mx-auto max-w-7xl px-4 pb-16 pt-16 sm:px-8 sm:pb-20 sm:pt-24">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-paper/60">{t("home.eyebrow")}</p>
+          <h1 className="mt-6 text-[clamp(2.75rem,5.5vw+1rem,5.75rem)] font-black leading-[0.95] tracking-[-0.04em]">
+            {t("home.title")}
+          </h1>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper/70">{t("home.subtitle")}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <ButtonLink href="/contact" variant="inverse">
+              {t("home.primary")}
+            </ButtonLink>
+            <ButtonLink href="/work" variant="outlineInverse">
+              {t("home.secondary")}
+            </ButtonLink>
           </div>
+          <Showreel slug={showreel.slug} hasSound={showreel.hasSound} label={t("tagline")} className="mt-14 sm:mt-20" />
         </div>
-        <Showreel slug={showreel.slug} hasSound={showreel.hasSound} className="mt-12" />
-        <Tagline text={t("tagline")} className="mt-6 text-center" />
       </section>
 
-      {/* Clients */}
-      <section className="border-y border-line py-6">
-        <p className="mx-auto mb-4 max-w-6xl px-4 text-xs text-muted sm:px-8">{t("home.clientsTitle")}</p>
-        <div className="overflow-hidden">
-          <div className="marquee flex w-max gap-12 whitespace-nowrap text-xl font-extrabold tracking-tight text-ink/80">
-            {[...clientNames, ...clientNames].map((name, index) => (
-              <span key={index} aria-hidden={index >= clientNames.length}>
-                {name}
-              </span>
+      {/* Proof: who we've cut for, then the numbers behind it. */}
+      <section className="mx-auto max-w-7xl px-4 pt-24 sm:px-8 sm:pt-32">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
+          <h2 className="max-w-md text-3xl font-black tracking-[-0.03em] sm:text-4xl">{t("home.clientsTitle")}</h2>
+          <ul className="grid grid-cols-2 gap-x-8 gap-y-5 text-lg font-bold sm:grid-cols-3 sm:text-xl">
+            {clientNames.map((name) => (
+              <li key={name}>{name}</li>
             ))}
-          </div>
+          </ul>
         </div>
+        <dl className="mt-16 grid grid-cols-2 border-t-2 border-ink md:grid-cols-4">
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="flex flex-col-reverse justify-end border-b border-line py-8 pr-4 md:border-b-0 md:border-r md:px-8 md:first:pl-0 md:last:border-r-0"
+            >
+              <dt className="mt-2 text-sm text-muted">{stat.label}</dt>
+              <dd className="text-4xl font-black tabular-nums tracking-[-0.04em] sm:text-5xl">{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
-      {/* Stats */}
-      <section className="mx-auto grid max-w-6xl grid-cols-2 gap-y-10 px-4 py-20 sm:px-8 md:grid-cols-4">
-        {stats.map((stat, index) => (
-          <Reveal key={stat.label} delay={index * 80}>
-            <p className="text-4xl font-black tracking-[-0.04em] sm:text-5xl">{stat.value}</p>
-            <p className="mt-2 max-w-56 text-sm text-muted">{stat.label}</p>
-          </Reveal>
-        ))}
-      </section>
-
-      {/* Featured work */}
-      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-8">
+      {/* Work: the largest section on the page. */}
+      <section className="mx-auto max-w-7xl px-4 pt-24 sm:px-8 sm:pt-32">
         <SectionHeading
           action={
-            <Link href="/work" className="text-sm font-semibold underline underline-offset-4">
-              {t("home.featuredCta")} →
+            <Link href="/work">
+              <SectionLink>{t("home.featuredCta")}</SectionLink>
             </Link>
           }
         >
           {t("home.featuredTitle")}
         </SectionHeading>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-4">
           {getFeatured(locale).map((video) => (
             <VideoCard key={video.slug} video={video} />
           ))}
         </div>
       </section>
 
-      {/* Services */}
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-8">
+      {/* Services as an index list rather than a card grid. */}
+      <section className="mx-auto max-w-7xl px-4 pt-24 sm:px-8 sm:pt-32">
         <SectionHeading
           action={
-            <Link href="/services" className="text-sm font-semibold underline underline-offset-4">
-              {t("home.servicesCta")} →
+            <Link href="/services">
+              <SectionLink>{t("home.servicesCta")}</SectionLink>
             </Link>
           }
         >
           {t("home.servicesTitle")}
         </SectionHeading>
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
-          {services.map((service, index) => (
-            <Link key={service.id} href="/services" className="group bg-paper p-8 transition-colors hover:bg-soft">
-              <span className="text-xs text-muted">0{index + 1}</span>
-              <h3 className="mt-3 text-2xl font-extrabold tracking-tight">{service.title}</h3>
-              <p className="mt-1 text-xs text-muted">{service.platforms}</p>
-              <p className="mt-4 text-sm leading-relaxed text-muted">{service.text}</p>
-            </Link>
+        <ul className="border-t-2 border-ink">
+          {services.map((service) => (
+            <li key={service.id}>
+              <Link
+                href={`/services#${service.id}`}
+                className="group grid gap-3 border-b border-line py-8 transition-colors hover:bg-soft md:grid-cols-[1.1fr_1.4fr_auto] md:items-center md:gap-10 md:px-4"
+              >
+                <h3 className="text-2xl font-extrabold tracking-tight sm:text-3xl">{service.title}</h3>
+                <div>
+                  <p className="text-lg">{service.text}</p>
+                  <p className="mt-1 text-sm text-muted">{service.platforms}</p>
+                </div>
+                <span aria-hidden="true" className="hidden text-2xl transition-transform duration-200 group-hover:translate-x-1 md:block">
+                  →
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
-      <ValuesSection className="mx-auto max-w-6xl px-4 py-12 sm:px-8" />
-      <ProcessSection className="mx-auto max-w-6xl px-4 py-20 sm:px-8" />
+      <ValuesSection className="mx-auto max-w-7xl px-4 pt-24 sm:px-8 sm:pt-32" />
+      <ProcessSection className="mx-auto max-w-7xl px-4 pt-24 sm:px-8 sm:pt-32" />
 
       <CtaSection />
     </>

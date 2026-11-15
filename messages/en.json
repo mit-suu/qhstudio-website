@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "qh.studio — Video editing & post-production studio",
+    "title": "qh.studio · Video editing & post-production studio",
     "description": "Short-form, long-form, video ads and motion graphics for creators, brands and agencies. Quick, affordable, good.",
     "work": "Work",
     "services": "Services",
@@ -27,10 +27,22 @@
     "secondary": "See our work",
     "clientsTitle": "Creators and brands we've edited for",
     "stats": [
-      { "value": "29.2M", "label": "views on our in-house channel" },
-      { "value": "180+", "label": "videos produced" },
-      { "value": "9.9M", "label": "views on a single video" },
-      { "value": "3", "label": "markets: US, UK, Vietnam" }
+      {
+        "value": "29.2M",
+        "label": "views on our in-house channel"
+      },
+      {
+        "value": "180+",
+        "label": "videos produced"
+      },
+      {
+        "value": "9.9M",
+        "label": "views on a single video"
+      },
+      {
+        "value": "3",
+        "label": "markets: US, UK, Vietnam"
+      }
     ],
     "featuredTitle": "Selected work",
     "featuredCta": "View all work",
@@ -40,15 +52,36 @@
     "processTitle": "How it works"
   },
   "values": [
-    { "title": "Quick", "text": "Fast turnaround. Deadlines kept." },
-    { "title": "Affordable", "text": "Fair pricing that fits a range of budgets." },
-    { "title": "Good", "text": "Polished, detail-driven edits that match your brief." }
+    {
+      "title": "Quick",
+      "text": "Fast turnaround. Deadlines kept."
+    },
+    {
+      "title": "Affordable",
+      "text": "Fair pricing that fits a range of budgets."
+    },
+    {
+      "title": "Good",
+      "text": "Polished, detail-driven edits that match your brief."
+    }
   ],
   "process": [
-    { "title": "Send your brief", "text": "Share your footage, references and deadline." },
-    { "title": "We edit", "text": "Pacing, captions, sound and graphics, tailored to your platform." },
-    { "title": "Review & revise", "text": "Leave feedback and we refine until it's right." },
-    { "title": "Deliver", "text": "Final files, export-ready for every platform, on time." }
+    {
+      "title": "Send your brief",
+      "text": "Share your footage, references and deadline."
+    },
+    {
+      "title": "We edit",
+      "text": "Pacing, captions, sound and graphics, tailored to your platform."
+    },
+    {
+      "title": "Review & revise",
+      "text": "Leave feedback and we refine until it's right."
+    },
+    {
+      "title": "Deliver",
+      "text": "Final files, export-ready for every platform, on time."
+    }
   ],
   "services": {
     "title": "Services",
@@ -60,28 +93,48 @@
         "title": "Short-form editing",
         "platforms": "TikTok · Reels · YouTube Shorts",
         "text": "Scroll-stopping hooks, tight pacing and captions built for retention.",
-        "includes": ["Hook & pacing for retention", "Animated captions", "Sound design & music", "B-roll and graphics"]
+        "includes": [
+          "Hook & pacing for retention",
+          "Animated captions",
+          "Sound design & music",
+          "B-roll and graphics"
+        ]
       },
       {
         "id": "long-form",
         "title": "Long-form editing",
         "platforms": "YouTube · Podcast · Documentary",
         "text": "Story-first edits that keep long videos easy to watch.",
-        "includes": ["Story structure & pacing", "Multicam & podcast edits", "Color & audio clean-up", "Titles, lower thirds, chapters"]
+        "includes": [
+          "Story structure & pacing",
+          "Multicam & podcast edits",
+          "Color & audio clean-up",
+          "Titles, lower thirds, chapters"
+        ]
       },
       {
         "id": "ads",
         "title": "Video ads",
         "platforms": "Product · Brand · UGC",
         "text": "Direct-response edits that turn attention into action.",
-        "includes": ["Hook variations for testing", "UGC & product edits", "Platform-ready aspect ratios", "Clear call to action"]
+        "includes": [
+          "Hook variations for testing",
+          "UGC & product edits",
+          "Platform-ready aspect ratios",
+          "Clear call to action"
+        ]
       },
       {
         "id": "motion",
         "title": "Motion graphics",
         "platforms": "Animation · VFX · Infographics",
         "text": "Motion that explains, highlights and makes a brand feel alive.",
-        "includes": ["Kinetic typography", "Infographics & callouts", "Logo & title animation", "Visual effects"]
+        "includes": [
+          "Kinetic typography",
+          "Infographics & callouts",
+          "Logo & title animation",
+          "Visual effects"
+        ]
       }
     ],
     "seeWork": "See examples",
@@ -131,13 +184,29 @@
       "Today we're a studio: a small team with a shared workflow, so clients get the speed and flexibility of a freelancer with the reliability of a team."
     ],
     "whoTitle": "Who we work with",
-    "who": ["Content creators & YouTubers", "Businesses & brands", "Marketing agencies"],
+    "who": [
+      "Content creators & YouTubers",
+      "Businesses & brands",
+      "Marketing agencies"
+    ],
     "howTitle": "How we work",
     "how": [
-      { "title": "Lean team", "text": "You talk directly to the editors on your project. No layers." },
-      { "title": "Remote-first", "text": "We work across time zones with clients in Vietnam and abroad." },
-      { "title": "Flexible", "text": "One-off projects or ongoing monthly volume." }
-    ]
+      {
+        "title": "Lean team",
+        "text": "You talk directly to the editors on your project. No layers."
+      },
+      {
+        "title": "Remote-first",
+        "text": "We work across time zones with clients in Vietnam and abroad."
+      },
+      {
+        "title": "Flexible",
+        "text": "One-off projects or ongoing monthly volume."
+      }
+    ],
+    "reelTitle": "The loud cut",
+    "reelText": "Same studio, different energy. This reel is cut the way we edit for TikTok and Reels: fast, bold and on the beat.",
+    "reelLabel": "Reel ’26 · the loud cut"
   },
   "contact": {
     "title": "Let's talk about your video",
@@ -177,7 +246,8 @@
   "video": {
     "soundOn": "Turn sound on",
     "soundOff": "Turn sound off",
-    "seek": "Seek video"
+    "seek": "Seek video",
+    "play": "Play with sound"
   },
   "chat": "Chat with us"
 }

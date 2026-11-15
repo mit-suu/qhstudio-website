@@ -24,7 +24,7 @@ export function WorkGrid({ groups, initial }: { groups: WorkGroup[]; initial?: C
             type="button"
             onClick={() => setActive(tab.id)}
             aria-pressed={active === tab.id}
-            className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+            className={`min-h-11 rounded-full border px-5 text-sm font-medium transition-colors ${
               active === tab.id ? "border-ink bg-ink text-paper" : "border-line text-muted hover:border-ink hover:text-ink"
             }`}
           >
