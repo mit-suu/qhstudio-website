@@ -109,13 +109,16 @@ const workData: WorkGroupData[] = [
   {
     id: "vlog",
     category: "long-form",
-    title: { en: "Lifestyle vlog", vi: "Vlog đời sống" },
+    title: { en: "Lifestyle & travel vlogs", vi: "Vlog đời sống & du lịch" },
     meta: { en: "Long-form · YouTube vlog · 2026", vi: "Video dài · vlog YouTube · 2026" },
     description: {
-      en: "A day-in-the-life vlog: pacing, music and handwritten-style titles that keep a long, casual video easy to watch.",
-      vi: "Vlog một ngày đời thường: nhịp dựng, nhạc và chữ viết tay giúp video dài, tự nhiên vẫn dễ xem.",
+      en: "Day-in-the-life and travel vlogs: pacing, music and minimal titles that keep a long, casual video easy to watch.",
+      vi: "Vlog đời thường và du lịch: nhịp dựng, nhạc và chữ tối giản giúp video dài, tự nhiên vẫn dễ xem.",
     },
-    videos: [{ slug: "vlog-edit", title: { en: "Lifestyle vlog", vi: "Vlog đời sống" }, tag: "Vlog", orientation: "horizontal" }],
+    videos: [
+      { slug: "canada-vlog", title: { en: "Canada vlog: Toronto", vi: "Vlog Canada: Toronto" }, tag: "Vlog", orientation: "horizontal" },
+      { slug: "vlog-edit", title: { en: "Lifestyle vlog", vi: "Vlog đời sống" }, tag: "Vlog", orientation: "horizontal" },
+    ],
   },
   {
     id: "ads",
@@ -135,20 +138,6 @@ const workData: WorkGroupData[] = [
       { slug: "ryse-8k", title: { en: "Someone quote me 8K", vi: "Báo giá tôi 8K" }, tag: { en: "Product", vi: "Sản phẩm" } },
       { slug: "ryse-wait", title: { en: "Wait, don't", vi: "Khoan đã" }, tag: { en: "Product", vi: "Sản phẩm" } },
       { slug: "ryse-cost", title: { en: "Why it costs so much", vi: "Vì sao giá cao" }, tag: { en: "Product", vi: "Sản phẩm" } },
-    ],
-  },
-  {
-    id: "viet-duc-home",
-    category: "motion",
-    title: "Việt Đức Home",
-    meta: { en: "Interiors · TikTok / Reels · 2026", vi: "Nội thất · TikTok / Reels · 2026" },
-    description: {
-      en: "Brand videos for a door manufacturer: a factory tour with paper-style title cards and an on-site install walkthrough with HUD-style callouts.",
-      vi: "Video thương hiệu cho nhà sản xuất cửa: tham quan xưởng với title card phong cách giấy và video lắp đặt thực tế với chú thích kiểu HUD.",
-    },
-    videos: [
-      { slug: "vietduc-factory", title: { en: "Factory tour", vi: "Tham quan xưởng" }, tag: { en: "Brand video", vi: "Video thương hiệu" } },
-      { slug: "vietduc-hud", title: { en: "On-site install, HUD style", vi: "Lắp đặt thực tế, bản HUD" }, tag: { en: "Brand video", vi: "Video thương hiệu" } },
     ],
   },
   {
@@ -184,7 +173,7 @@ const featuredSlugs = [
   "argento-01",
   "natasha-zuvela-01",
   "ryse-gadget",
-  "vietduc-hud",
+  "bashi-152",
   "beatframe-eminem",
   "carplanet-03",
   "ryse-cost",
@@ -192,7 +181,6 @@ const featuredSlugs = [
 
 export const clientNames = [
   "Car Planet UK",
-  "Việt Đức Home",
   "Bashiri Smith",
   "Justin Phan",
   "Michael Argento",
