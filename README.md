@@ -38,8 +38,8 @@ Header quốc gia chỉ có khi deploy trên Vercel hoặc đi qua Cloudflare.
 
 Xem [.env.example](.env.example).
 
-- `NEXT_PUBLIC_SITE_URL`: domain chính thức, dùng cho canonical, sitemap và Open Graph.
-- `NEXT_PUBLIC_VIDEO_BASE_URL`: thư mục chứa `<slug>.mp4`. Để trống thì video lấy từ `/work` (local).
+- `NEXT_PUBLIC_SITE_URL`: domain chính thức, dùng cho canonical, sitemap và Open Graph. Để trống thì bản build production dùng `https://www.qhstudio.io.vn`, còn dev dùng `http://localhost:3000`.
+- `NEXT_PUBLIC_VIDEO_BASE_URL`: thư mục chứa `<slug>.mp4`. Để trống thì bản build production lấy từ `https://qhstudiomedia.blob.core.windows.net/work`, còn dev lấy từ `/work` (local).
 
 ## Đưa video lên Azure Blob Storage (gói Azure for Students)
 
@@ -53,4 +53,4 @@ az storage blob upload-batch --account-name qhstudiomedia -d work -s public/work
   --content-cache-control "public, max-age=31536000, immutable" --auth-mode key
 ```
 
-Sau đó đặt `NEXT_PUBLIC_VIDEO_BASE_URL=https://qhstudiomedia.blob.core.windows.net/work`. Nếu tên `qhstudiomedia` đã có người dùng, đổi sang tên khác (chữ thường, từ 3 đến 24 ký tự).
+Storage account `qhstudiomedia` (resource group `qhstudio-rg`) đã được tạo, và bản build production đã trỏ sẵn tới container `work`. Khi thêm video mới, chỉ cần chạy lại lệnh `upload-batch` ở trên (thêm `--overwrite` nếu thay file cũ cùng tên) rồi push code.

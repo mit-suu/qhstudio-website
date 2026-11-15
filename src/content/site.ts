@@ -1,9 +1,12 @@
 import type { Locale } from "@/i18n/routing";
 
+// Production builds fall back to the live domain and video storage, so a deploy works without env vars.
+const isProd = process.env.NODE_ENV === "production";
+
 // Studio contact details. Leave a channel empty to hide it everywhere on the site.
 export const site = {
   name: "qh.studio",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || (isProd ? "https://www.qhstudio.io.vn" : "http://localhost:3000")).replace(/\/$/, ""),
   email: "qhstudio.work@gmail.com",
   phone: "+84 333 512 771",
   zalo: "", // e.g. https://zalo.me/84333512771
@@ -46,7 +49,9 @@ export function getChatChannel(locale: Locale) {
   return getChannels(locale).find((channel) => channel.id === "zalo" || channel.id === "messenger" || channel.id === "whatsapp");
 }
 
-const videoBase = (process.env.NEXT_PUBLIC_VIDEO_BASE_URL || "/work").replace(/\/$/, "");
+const videoBase = (
+  process.env.NEXT_PUBLIC_VIDEO_BASE_URL || (isProd ? "https://qhstudiomedia.blob.core.windows.net/work" : "/work")
+).replace(/\/$/, "");
 
 export const videoSrc = (slug: string) => `${videoBase}/${slug}.mp4`;
 export const posterSrc = (slug: string) => `/work/${slug}.jpg`;
